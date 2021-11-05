@@ -11,3 +11,10 @@ def fib(self, n: int) -> int:
         b = s
         n -= 1
     return s
+
+# naive solution
+def fib(self, n: int) -> int:
+    if n <= 1:
+        return n
+    else:
+        return self.fib(n-1) + self.fib(n-2)

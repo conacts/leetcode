@@ -1,10 +1,8 @@
 def isSymmetric(self, root: Optional[TreeNode]) -> bool:
-    return self.lol(root.right, root.left)
+    return self.f(root.left, root.right)
 
-def lol(self, r, l):
-    if not r and not l:
-        return True
-    elif not r or not l:
-        return False
+def f(self, l, r):
+    if not l or not r:
+        return l == r
     else:
-        return r.val == l.val and self.lol(r.right, l.left) and self.lol(l.right, r.left)
+        return l.val == r.val and self.f(l.right, r.left) and self.f(l.left, r.right)
