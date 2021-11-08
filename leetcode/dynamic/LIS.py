@@ -1,3 +1,4 @@
+# NEEDS TO BE OPTIMIZED
 def lengthOfLIS(self, nums: List[int]) -> int:
     l = [1] * len(nums)
     for i in range(len(nums)):
