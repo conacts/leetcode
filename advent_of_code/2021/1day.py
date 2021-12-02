@@ -5,7 +5,6 @@ def part1(file):
     prev_line = 0
     with open(file) as f:
         out = f.readlines()
-        out = f.readlines()
         for line in out:
             line = int(line.strip('\n'))
             if prev_line < line:
