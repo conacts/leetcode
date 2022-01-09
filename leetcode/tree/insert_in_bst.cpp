@@ -1,3 +1,4 @@
+// not totally efficient, stack is most efficinet
 TreeNode* insertIntoBST(TreeNode* root, int val) {
 	if (!root)
 	{
